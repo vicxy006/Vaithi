@@ -1,0 +1,146 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Mobile optimization for older devices -->
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<!-- Apple specific -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<!-- Android / Chrome specific -->
+<meta name="mobile-web-app-capable" content="yes" />
+<!-- Theme color for mobile browser top bar -->
+<meta name="theme-color" content="#ffffff" />
+    <title>Vetri Maintenance & Services</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="makeup.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+            <script type="text/javascript">
+              (function() {
+              emailjs.init("cKji5uaquX_KOFeLP");
+              })(); 
+			</script>
+</head>
+<body>
+    <!--navbar-->
+   <header>
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text">🛠️Vetri Maintenance & Services</h2>
+        </a>
+        <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+           <li class="nav-item">
+                <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="sale.html" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="past.html" class="nav-link">Client</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">contact</a>
+            </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+   </header>
+   <!--order-->
+  
+   <main><br><br>
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+                  <center> 
+                    <iframe class="map" align="center" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3948.9405867158816!2d77.59752677500946!3d8.208729991823422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTInMzEuNCJOIDc3wrAzNicwMC40IkU!5e0!3m2!1sen!2sin!4v1748335336463!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</center><BR>
+                    <div class="section-content">
+            <ul class="contact-list">
+                <li class="contact-info">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>6J52+42J Jacobpuram, Tamil Nadu</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                        <p>v.vaithialingam@gmail.com</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                        <p>7598624298</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-clock"></i>
+                        <p>Morning 9:00 Am</p>
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-clock"></i>
+                        <p>Evening 9:00 Am</p>
+
+                </li>
+                <li class="contact-info">
+                    <i class="fa-solid fa-globe"></i>
+                        <p>https://vetri-maintenance-and-services.netlify.app/</p>
+                </li>
+            </ul>
+            <form class="contact-form">
+			<input type="text" id="name" placeholder="name" name="name" class="form-input" required>
+			<input type="email" id="email" placeholder="email" name="email" class="form-input" required>
+			<input type="text" id="password" placeholder="Conve your message" name="password" class="form-input" required><br>
+			<button  onclick="sendemail()"type="button" class="submit-button">submit</button>
+		</form>
+          
+        </div>
+    </section>
+    <!--Footer section-->
+    <footer class="foot">
+            <div class="section-content">
+                <p class="copyright-text">©Copyright 2025 Vetri Maintenance&Services, All Rights Reserved</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/vaithi.lingam.96?mibextid=ZbWKwL" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vaithi.lingam.96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+    </footer>
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+ <script>function sendemail(){
+
+	var name=document.getElementById("name").value;
+	var email=document.getElementById("email").value;
+	var password=document.getElementById("password").value;
+
+	var templateParams = {
+        use: name,
+        email: email,
+		msg: password
+      };
+
+      emailjs.send('service_oz2xzta', 'template_ypai17v', templateParams)
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+     window.alert("Sent successfully!");
+     
+  })
+
+}
+</script>
+</body>
+</html>

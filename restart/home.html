@@ -1,0 +1,220 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Mobile optimization for older devices -->
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<!-- Apple specific -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<!-- Android / Chrome specific -->
+<meta name="mobile-web-app-capable" content="yes" />
+<!-- Theme color for mobile browser top bar -->
+<meta name="theme-color" content="#ffffff" />
+    <title>Vetri Maintenance & Services</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="makeup.css">
+</head>
+<body>
+    <!--navbar-->
+   <header>
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+
+            <h2 class="logo-text">🛠️Vetri Maintenance & Services</h2>
+        </a>
+        <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li class="nav-item">
+                <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="sale.html" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="past.html" class="nav-link">Client</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">contact</a>
+            </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+   </header>
+   <!--order-->
+   <main>
+    <!--hero section-->
+    <section class="hero-section" id="home">
+        <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Reliable. Affordable. Professional.</h2>
+                <p class="description">At Vetri Maintenance & Services, we bring expert care to your doorstep. Whether it's electrical fixes, plumbing solutions, water purifier servicing, or general maintenance, we’ve got you covered with quick, quality, and affordable solutions.</p>
+                <p>⚡ Why Choose Us?
+                  <ul>
+                    <li>✔️ Certified Technicians</li>
+                    <li>✔️ Prompt On-Time Service</li>
+                    <li>✔️ Transparent Pricing</li>
+                    <li>✔️ 100% Satisfaction Guaranteed</li>
+</ul></p><br>
+                <div class="buttons">
+                    <button class="button book" onclick="document.getElementById('loginModal').style.display='block'">Book Your Servies</button>
+                    <a href="contact.html" class="button contact">Contact Us</a>
+                </div>
+            </div>
+             <div class="slider-container">
+  <div class="slider" id="slider">
+     <div class="slide"><img src="home3.png" alt="Image 3"></div>
+    <div class="slide"><img src="home4.png" alt="Image 3"></div>
+    <div class="slide"><img src="home1.png" alt="Image 1"></div>
+     <div class="slide"><img src="home2.png" alt="Image 2"></div>
+  </div>
+
+  <div class="controls">
+    <button onclick="prevSlide()">&#10094;</button>
+    <button onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+        </div>
+    </section>
+   <section class="ims-container">
+  <h1>Types Of Services</h1>
+
+  <!-- List format layout -->
+  <div class="ims-list">
+
+    <!-- Item 1 -->
+    <div class="ims-item">
+      <div class="icon">
+        <img src="tech.png" alt="Admission Icon">
+      </div>
+      <div class="ims-content">
+        <h3>Technical Work Explanation: CCTV, TV, and Wi-Fi/Fiber Installation:
+</h3>
+        <p>
+          CCTV installation involves mounting cameras, laying cables, connecting to DVR/NVR, setting up power, and 
+	configuring remote access. TV installation includes wall mounting, connecting HDMI and power cables, and
+	setting up input sources. Wi-Fi and fiber installation involves running network or fiber cables, 
+	installing routers or ONTs, setting up internet configurations, and testing signal strength. All systems 
+	are tested, configured, and handed over with basic user training.
+
+        </p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="ims-item">
+      <div class="icon">
+        <img src="ele.png" alt="Fee Icon">
+      </div>
+      <div class="ims-content">
+        <h3>Plumbing Work Explanation:</h3>
+        <p>
+         Plumbing work involves the installation, repair, and maintenance of water supply and drainage systems. This 
+	includes laying pipes, fitting taps, sinks, toilets, and water tanks, as well as ensuring proper water flow and
+	leak prevention. It also covers connecting appliances like geysers and washing machines, and testing all
+	systems for leaks and pressure. The work ensures safe and efficient water distribution and waste removal in
+	buildings.
+        </p>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="ims-item">
+      <div class="icon">
+        <img src="plu.png" alt="Hostel Icon">
+      </div>
+      <div class="ims-content">
+        <h3>Electrical Work Explanation:
+</h3>
+        <p>
+          Electrical work involves the installation, maintenance, and repair of wiring systems and electrical components.
+	This includes laying cables, installing switches, sockets, lights, fans, circuit breakers, and distribution 
+	boards. It also involves connecting main power supply lines, testing electrical loads, ensuring safety through
+	proper earthing, and troubleshooting any electrical faults. The work ensures safe and reliable power distribution
+	throughout the building.        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('loginModal').style.display='none'">&times;</span>
+    <h2>Book Your Services</h2>
+    <form id="whatsappForm">
+  <input type="text" id="name" placeholder="Your Name" required><br><br>
+  <input type="tel" id="phone" placeholder="Your Phone Number" required><br><br>
+  <select class="form-input" id="service"required>
+                        <option>Water filter Installation</option>
+                        <option>Water purifier Installation</option>
+                        <option>Solar Panal Installation</option>
+                        <option>Electrical Work</option>
+                        <option>Plumbing Work</option>
+                        <option>CCTV Camera Installation</option>
+                        <option>UPS Installation</option>
+                    </select>
+   <textarea placeholder="Address" class="form-input"id="address" required></textarea>
+  <button type="submit">Send via WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+    <!--Footer section-->
+    <footer class="foot">
+            <div class="section-content">
+                <p class="copyright-text">©Copyright 2025 Vetri Maintenance&Services, All Rights Reserved</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/vaithi.lingam.96?mibextid=ZbWKwL" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vaithi.lingam.96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+    </footer>
+   </main>
+   <script>
+  document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const service = document.getElementById("service").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const address = document.getElementById("address").value.trim();
+
+    // Replace with your business WhatsApp number (with country code, no + or spaces)
+    const whatsappNumber = "917598624298";
+
+    const message = `Hello, I am ${name}.\n I am interested in your service: ${service}.\n You can reach me at ${phone}.\nAnd my address is ${address}.`;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+   <script>
+  window.onclick = function(event) {
+    const modal = document.getElementById('loginModal');
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Mobile optimization for older devices -->
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<!-- Apple specific -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<!-- Android / Chrome specific -->
+<meta name="mobile-web-app-capable" content="yes" />
+<!-- Theme color for mobile browser top bar -->
+<meta name="theme-color" content="#ffffff" />
+    <title>Vetri Maintenance & Services</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="makeup.css">
+</head>
+<style>
+    h1 {
+        text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 40px;
+      color: orangered;
+    }
+
+    .services-container {
+      justify-content: space-between;
+      margin-left: 220px;     
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 1050px;
+      max-width: 1100px;
+    }
+
+    .flip-card {
+      background: transparent;
+      width: 100%;
+      height: 250px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .flip-card-front {
+      background-color: white;
+      color: #0052cc;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .flip-card-back {
+      background-color: #ffffff;
+      color: white;
+      transform: rotateY(180deg);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+       .services-container {
+      display: grid;
+      margin-left: 5%;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 90%;
+      max-width: 1100px;
+    }
+
+    }
+</style>
+<body>
+    <!--navbar-->
+   <header>
+    <nav class="navbar section-content">
+        <a href="#" class="nav-logo">
+            <h2 class="logo-text">🛠️Vetri Maintenance & Services</h2>
+        </a>
+        <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li class="nav-item">
+                <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="sale.html" class="nav-link">Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="past.html" class="nav-link">Client</a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">contact</a>
+            </li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+   </header>
+   <!--order-->
+  
+   <main><br>
+    <!--Services-->
+    <br><br>
+    <section class="services" id="service">
+        <h2 class="sectio-title">Services</h2>
+        <div class="section content">
+            <div class="slider-containerr swiper">
+                 <h1>Electrical Services</h1>
+            <div class="services-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Residential Electrical Works</div>
+        <div class="flip-card-back">
+        <img src="s1.jpg" alt="Image 1">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Commercial Electrical Works</div>
+        <div class="flip-card-back">
+          <img src="s2.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Industrial Electrical Works</div>
+        <div class="flip-card-back">
+          <img src="s3.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Construction & Infrastructure Electrical Works</div>
+        <div class="flip-card-back">
+          <img src="s4.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Specialized Electrical Services</div>
+        <div class="flip-card-back">
+          <img src="s5.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Maintenance & Testing</div>
+        <div class="flip-card-back">
+        <img src="s6.jpg" alt="Image 1">        </div>
+        <br>
+      </div>
+    </div>
+  </div><br>
+            </div>
+        </div><br>
+    </section>
+    <section class="service" id="service">
+        <div class="section content"><br>
+            <div class="slider-containerr swiper">
+                 <h1>Technical Services</h1>
+            <div class="services-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">TV cable and dick installation</div>
+        <div class="flip-card-back">
+          <img src="s7.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front"> CCTV installation </div>
+        <div class="flip-card-back">
+          <img src="s8.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">WI-FI and Fiber installation</div>
+        <div class="flip-card-back">
+          <img src="s9.jpg" alt="Image 1">        </div>
+      </div>
+    </div><br>
+   </section>
+       <section class="services" id="service">
+        <div class="section content">
+            <br>
+            <div class="slider-containerr swiper">
+                 <h1>Plumbing Services</h1>
+            <div class="services-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Residential Plumbing</div>
+        <div class="flip-card-back">
+          <img src="s10.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Commercial Plumbing</div>
+        <div class="flip-card-back">
+          <img src="s11.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Industrial Plumbing</div>
+        <div class="flip-card-back">
+          <img src="s12.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Infrastructure and Civil Plumbing</div>
+        <div class="flip-card-back">
+          <img src="s13.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Stormwater and Rainwater Drainage</div>
+        <div class="flip-card-back">
+          <img src="s14.jpg" alt="Image 1">        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">Emergency Plumbing Services</div>
+        <div class="flip-card-back">
+         <img src="s15.jpg" alt="Image 1">        </div>
+        <br>
+      </div>
+    </div>
+  </div><br>
+            </div>
+        </div><br>
+    </section>
+    <!--Footer section-->
+    <footer class="foot">
+            <div class="section-content">
+                <p class="copyright-text">©Copyright 2025 Vetri Maintenance&Services, All Rights Reserved</p>
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/vaithi.lingam.96?mibextid=ZbWKwL" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/vaithi.lingam.96?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+    </footer>
+   </main>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
